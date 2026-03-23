@@ -9,6 +9,13 @@
   overflow-x: hidden;
 }
 
+.hudRow {
+  display: flex;
+  justify-content: center;
+  width: min(828px, 100%);
+  flex-shrink: 0;
+}
+
 .title {
   font-family: 'JetBrains Mono', monospace;
   font-size: 28px;

@@ -80,6 +80,10 @@ export default function PuzzleGame({ defaultMode = '3x3', showModeToggle = true 
     <div className={styles.page}>
       <h1 className={styles.title}>Sliding Tile Puzzle</h1>
 
+      <div className={styles.hudRow}>
+        <HUD timerFormatted={timer.formatted} moves={moves} />
+      </div>
+
       <Controls
         mode={mode}
         onShuffle={shuffle}
@@ -109,8 +113,6 @@ export default function PuzzleGame({ defaultMode = '3x3', showModeToggle = true 
           </motion.div>
         </AnimatePresence>
       </div>
-
-      <HUD timerFormatted={timer.formatted} moves={moves} />
 
       <VictoryModal
         show={gameState === 'won'}

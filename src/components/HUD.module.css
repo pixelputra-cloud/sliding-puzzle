@@ -1,11 +1,11 @@
 .hud {
   display: flex;
-  gap: 40px;
+  gap: 24px;
   align-items: center;
   justify-content: center;
-  padding: 14px 32px;
+  padding: 8px 20px;
   background: rgba(0, 0, 0, 0.18);
-  border-radius: 12px;
+  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -27,7 +27,7 @@
 
 .value {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 500;
   font-variant-numeric: tabular-nums;
   color: #FFD166;

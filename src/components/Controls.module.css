@@ -82,20 +82,28 @@
   transform: translateY(-1px);
 }
 
+/* Square icon-only button variant */
+.iconBtn {
+  padding: 10px 12px;
+}
+
 /* Sound toggle */
 .soundBtn {
-  padding: 10px 14px;
+  padding: 10px 12px;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   background: transparent;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 17px;
+  color: #ffffff;
   cursor: pointer;
-  transition: background 0.15s, color 0.15s;
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
   line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .soundBtn:hover {
   background: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-1px);
 }
