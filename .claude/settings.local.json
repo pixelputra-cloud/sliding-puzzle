@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(command -v node)",
+      "Read(//usr/local/bin/**)",
+      "Bash(echo \"PATH=$PATH\")",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Users/91773/AppData/Roaming/**)",
+      "Read(//c/Users/91773/AppData/Local/Programs/**)",
+      "Read(//c/Users/91773/**)",
+      "Bash(cmd.exe /c \"where npm 2>nul & where node 2>nul\")",
+      "Bash(cmd.exe /c \"dir /s /b C:\\\\Program Files\\\\nodejs\\\\npm.cmd 2>nul & dir /s /b C:\\\\Users\\\\91773\\\\AppData\\\\Roaming\\\\npm\\\\npm.cmd 2>nul & dir /s /b C:\\\\nvm 2>nul\")",
+      "Bash(cmd.exe /c \"reg query HKLM\\\\SOFTWARE\\\\Node.js 2>nul & reg query HKCU\\\\SOFTWARE\\\\Node.js 2>nul & reg query \"\"HKLM\\\\SOFTWARE\\\\WOW6432Node\\\\Node.js\"\" 2>nul\")",
+      "Bash(cmd.exe /c \"for /f \"\"delims=\"\" %i in \\(''''dir /b /s C:\\\\Users\\\\91773\\\\AppData\\\\Local 2^>nul ^| findstr /i node''''\\) do @echo %i\")",
+      "Read(//c/Program Files \\(x86\\)/**)",
+      "Read(//c//**)",
+      "Read(//e/Claude_Matrix/tile_moving_game/$APPDATA/**)",
+      "Read(//e/Claude_Matrix/tile_moving_game/$LOCALAPPDATA/**)",
+      "Read(//e/Claude_Matrix/tile_moving_game/$LOCALAPPDATA/Programs/**)",
+      "Bash(cmd.exe /c \"dir C:\\\\Program Files\\\\nodejs 2>nul & dir C:\\\\nvm 2>nul & dir %APPDATA%\\\\nvm 2>nul & dir %LOCALAPPDATA%\\\\Programs\\\\node 2>nul & powershell -Command \"\"Get-Command node -ErrorAction SilentlyContinue | Select-Object Source\"\" 2>nul\")",
+      "Bash(cmd.exe /c \"powershell -NoProfile -Command \"\"[Environment]::GetEnvironmentVariable\\(''PATH'',''Machine''\\)\"\"\")",
+      "Bash(cmd.exe /c \"powershell -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command \"\"& { Write-Output \\([Environment]::GetEnvironmentVariable\\(''PATH'',''Machine''\\)\\) }\"\"\")",
+      "Bash(cmd.exe /c \"npm --version\")",
+      "Bash(cmd.exe /c \"npm --version & echo EXIT:%ERRORLEVEL%\")",
+      "Bash(cmd.exe /c \"npm --version 2>&1 & echo done\")",
+      "Bash(cmd.exe /c \"node -e \"\"console.log\\(''node works: '' + process.version\\)\"\" 2>&1 & echo after_node\")",
+      "Bash(cmd.exe /c \"node -e \"\"console.log\\(process.version\\)\"\" > C:\\\\Users\\\\91773\\\\AppData\\\\Local\\\\Temp\\\\nodetest.txt 2>&1\")",
+      "Bash(cmd.exe /c \"echo hello_test_output 2>&1\")",
+      "Bash(find /e /f /g 2)",
+      "Bash(/dev/null -name node.exe)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(winget --version)",
+      "Bash(winget install:*)",
+      "Bash(winget list:*)",
+      "Bash(export PATH=\"/c/Program Files/nodejs/:$PATH\")",
+      "Bash(npm run:*)"
+    ]
+  }
+}
