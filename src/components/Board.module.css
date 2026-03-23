@@ -1,0 +1,38 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board {
+  position: relative;
+  outline: none;
+  cursor: default;
+  flex-shrink: 0;
+}
+
+/* Artboard is the full board background (decorative border + black play area).
+   It sits at the very bottom so tiles and base are visible on top of it. */
+.artboard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* Base is the inner board surface visible in the empty slot */
+.base {
+  position: absolute;
+  display: block;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Tiles container */
+.tilesContainer {
+  position: absolute;
+  z-index: 20;
+}

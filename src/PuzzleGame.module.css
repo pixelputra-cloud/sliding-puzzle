@@ -1,0 +1,48 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  gap: 16px;
+  overflow-x: hidden;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  background: linear-gradient(135deg, #a78bfa, #f472b6 60%, #fbbf24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* boardWrap: scale based on viewport width only.
+   Setting height = scaled height collapses the layout space since
+   transform: scale() does not affect layout flow. */
+.boardWrap {
+  position: relative;
+  width: 1150px;
+  flex-shrink: 0;
+  transform-origin: top center;
+  /* Default (≥1100px): 72% → visual 828px */
+  transform: scale(0.72);
+  height: calc(1150px * 0.72);
+}
+
+@media (max-width: 1100px) {
+  .boardWrap { transform: scale(0.60); height: calc(1150px * 0.60); }
+}
+@media (max-width: 900px) {
+  .boardWrap { transform: scale(0.50); height: calc(1150px * 0.50); }
+}
+@media (max-width: 720px) {
+  .boardWrap { transform: scale(0.40); height: calc(1150px * 0.40); }
+}
+@media (max-width: 560px) {
+  .boardWrap { transform: scale(0.32); height: calc(1150px * 0.32); }
+}
