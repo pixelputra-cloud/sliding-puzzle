@@ -10,13 +10,12 @@
 }
 
 .title {
-  font-size: 26px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 28px;
   font-weight: 800;
-  letter-spacing: 0.04em;
-  background: linear-gradient(135deg, #a78bfa, #f472b6 60%, #fbbf24);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
   text-align: center;
   flex-shrink: 0;
 }

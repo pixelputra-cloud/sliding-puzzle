@@ -1,34 +1,35 @@
 .hud {
   display: flex;
-  gap: 48px;
+  gap: 40px;
   align-items: center;
   justify-content: center;
-  padding: 16px 32px;
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(8px);
+  padding: 14px 32px;
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .stat {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
 }
 
 .label {
-  font-size: 11px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .value {
-  font-size: 28px;
-  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 26px;
+  font-weight: 500;
   font-variant-numeric: tabular-nums;
-  color: #fff;
+  color: #FFD166;
   line-height: 1;
 }
