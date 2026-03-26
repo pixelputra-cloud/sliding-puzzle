@@ -43,10 +43,10 @@ export default function VictoryModal({ show, timerFormatted, moves, onPlayAgain,
         >
           <motion.div
             className={styles.modal}
-            initial={{ y: 120, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: 120, opacity: 0 }}
-            transition={{ type: 'spring', stiffness: 350, damping: 30 }}
+            initial={{ scale: 0.85, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.85, opacity: 0 }}
+            transition={{ type: 'spring', stiffness: 380, damping: 28 }}
           >
             <div className={styles.heading}>Puzzle Solved!</div>
             <div className={styles.sub}>Congratulations</div>
