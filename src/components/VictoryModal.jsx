@@ -8,7 +8,7 @@ function fireConfetti() {
     particleCount: 120,
     spread: 80,
     origin: { y: 0.3 },
-    colors: ['#a78bfa', '#6c63ff', '#f472b6', '#34d399', '#fbbf24'],
+    colors: ['#FFD166', '#4B7EFF', '#ffffff', '#ffe08a', '#a0bcff'],
   })
   setTimeout(() => {
     confetti({
@@ -48,6 +48,7 @@ export default function VictoryModal({ show, timerFormatted, moves, onPlayAgain,
             exit={{ scale: 0.85, opacity: 0 }}
             transition={{ type: 'spring', stiffness: 380, damping: 28 }}
           >
+            <div className={styles.icon}>🏆</div>
             <div className={styles.heading}>Puzzle Solved!</div>
             <div className={styles.sub}>Congratulations</div>
 
