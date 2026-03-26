@@ -34,7 +34,8 @@
       "Bash(winget install:*)",
       "Bash(winget list:*)",
       "Bash(export PATH=\"/c/Program Files/nodejs/:$PATH\")",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(PATH=\"/c/Program Files/nodejs:$PATH\" npm run deploy)"
     ]
   }
 }
